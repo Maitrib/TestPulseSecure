@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DataFromExcel</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a22c2a52-8efb-4656-9b0e-d57d414fef49</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>88e3d16e-5237-4493-832d-f4626da14161</id>
+      <masked>false</masked>
+      <name>Username</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2df69cdd-de4a-4e0a-b070-9df8996aca33</id>
+      <masked>false</masked>
+      <name>Password</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>rect_JavaScript chart by amCharts_amcharts-_c75ca6</name>
+   <tag></tag>
+   <elementGuidId>459ac17d-fa48-4553-bea0-635d107ef69e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;topBusyHoursChart&quot;)/div[2]/svg[1]/g[@class=&quot;amcharts-Sprite-group amcharts-Container-group&quot;]/g[@class=&quot;amcharts-Sprite-group amcharts-Rectangle-group&quot;]/rect[@class=&quot;amcharts-Rectangle&quot;][count(. | //rect[@class = 'amcharts-Rectangle' and @width = '350' and @height = '215']) = count(//rect[@class = 'amcharts-Rectangle' and @width = '350' and @height = '215'])]</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>rect</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>amcharts-Rectangle</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>width</name>
+      <type>Main</type>
+      <value>350</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>height</name>
+      <type>Main</type>
+      <value>215</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;topBusyHoursChart&quot;)/div[2]/svg[1]/g[@class=&quot;amcharts-Sprite-group amcharts-Container-group&quot;]/g[@class=&quot;amcharts-Sprite-group amcharts-Rectangle-group&quot;]/rect[@class=&quot;amcharts-Rectangle&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>
