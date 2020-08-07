@@ -15,11 +15,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WS.sendRequestAndVerify(findTestObject('Test/Get'))
+WS.sendRequestAndVerify(findTestObject('REST/Get'))
 
-WS.sendRequestAndVerify(findTestObject('Test/DeleteUser'))
+WS.sendRequestAndVerify(findTestObject('REST/DeleteUser'))
 
-WS.sendRequestAndVerify(findTestObject('Test/UpdateUser'))
+WS.sendRequestAndVerify(findTestObject('REST/UpdateUser'))
 
-WS.sendRequestAndVerify(findTestObject('Test/Post'))
+WS.sendRequestAndVerify(findTestObject('REST/Post'))
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Get</name>
+   <name>ListService</name>
    <tag></tag>
-   <elementGuidId>1ac757fb-a580-4d58-adf7-6f68e445ebe6</elementGuidId>
+   <elementGuidId>02441143-47c9-472a-822c-800a46d6d9df</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>0</connectionTimeout>
@@ -12,15 +12,18 @@
    <httpBodyContent></httpBodyContent>
    <httpBodyType></httpBodyType>
    <maxResponseSize>0</maxResponseSize>
-   <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://reqres.in/api/users/2</restUrl>
-   <serviceType>RESTful</serviceType>
-   <soapBody></soapBody>
+   <restRequestMethod></restRequestMethod>
+   <restUrl></restUrl>
+   <serviceType>SOAP</serviceType>
+   <soapBody>&lt;Envelope xmlns=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;>
+    &lt;Body>
+        &lt;ListOfCountryNamesByName xmlns=&quot;http://www.oorsprong.org/websamples.countryinfo&quot;/>
+    &lt;/Body>
+&lt;/Envelope></soapBody>
    <soapHeader></soapHeader>
-   <soapRequestMethod></soapRequestMethod>
+   <soapRequestMethod>SOAP</soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
-   <soapServiceFunction></soapServiceFunction>
+   <soapServiceFunction>ListOfCountryNamesByName</soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <verificationScript>import static org.assertj.core.api.Assertions.*
@@ -37,14 +40,6 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-
-WS.verifyElementPropertyValue(response, 'data.first_name', &quot;Janet&quot;)
-
-
-WS.verifyResponseStatusCode(response, 200)
-
-assertThat(response.getStatusCode()).isEqualTo(200)
-
-</verificationScript>
-   <wsdlAddress></wsdlAddress>
+WS.verifyElementText(response, 'ListOfCountryNamesByNameResponse.ListOfCountryNamesByNameResult.tCountryCodeAndName[0].sISOCode', 'AX')</verificationScript>
+   <wsdlAddress>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL</wsdlAddress>
 </WebServiceRequestEntity>

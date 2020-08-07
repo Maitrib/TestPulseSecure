@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;&quot;,
+  &quot;text&quot;: &quot;{start_time: 1596585600, time_duration_type: \&quot;current_day\&quot;, current_time: 1596636781}\nstart_time: 1596585600\ntime_duration_type: \&quot;current_day\&quot;\ncurrent_time: 1596636781&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>

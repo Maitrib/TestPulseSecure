@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DataDrivenTest</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d0c935d3-9fb7-4314-a435-7f09ee2fd53c</testCaseGuid>
+   <variable>
+      <defaultValue>'US'</defaultValue>
+      <description></description>
+      <id>25da5b23-d9ee-47a1-8248-75aeb9521079</id>
+      <masked>false</masked>
+      <name>CountryCode</name>
+   </variable>
+   <variable>
+      <defaultValue>'Washington'</defaultValue>
+      <description></description>
+      <id>48de01b8-99b1-409e-9b63-6d6d8ba691cf</id>
+      <masked>false</masked>
+      <name>Capital</name>
+   </variable>
+   <variable>
+      <defaultValue>'Dollars'</defaultValue>
+      <description></description>
+      <id>248e0726-b7a8-4554-be84-67230a631175</id>
+      <masked>false</masked>
+      <name>Currency1</name>
+   </variable>
+</TestCaseEntity>

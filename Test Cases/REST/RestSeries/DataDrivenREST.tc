@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DataDrivenREST</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dec4f9cc-5c47-4e64-a409-b524f9aa1764</testCaseGuid>
+   <variable>
+      <defaultValue>'Maitri'</defaultValue>
+      <description></description>
+      <id>85330b8d-a555-420d-9676-a4cf1bb70c5b</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+</TestCaseEntity>

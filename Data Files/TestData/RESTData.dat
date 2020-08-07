@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>LoginData</name>
+   <name>RESTData</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>8b307655-c41e-4fcf-adc2-56dae2cbf668</dataFileGUID>
-   <dataSourceUrl>/Users/maitri.brahmakshatriya/Downloads/Katalon/LoginData.xlsx</dataSourceUrl>
+   <dataFileGUID>e51c72e0-df06-4758-87ef-f4ab0675a772</dataFileGUID>
+   <dataSourceUrl>/Users/maitri.brahmakshatriya/Downloads/Katalon/RESTData.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
