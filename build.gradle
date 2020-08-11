@@ -1,25 +1,43 @@
 plugins {
   id 'java'
+  id 'groovy'
   id "com.katalon.gradle-plugin" version "0.0.7"
 }
 
 repositories {
+  jcenter()
   mavenCentral()
 }
 
-//dependencies {
-  // sample dependencies
-  // rest-assured
-  // compile 'io.rest-assured:rest-assured:3.2.0'
-  // JsonPath
-  // compile 'io.rest-assured:json-path:3.2.0'
-  // XmlPath
-  // compile 'io.rest-assured:json-path:3.2.0'
-  // JSON Schema Validation
-  // compile 'io.rest-assured:json-schema-validator:3.2.0'
-//}
-
-dependencies {
-  compile ('com.applitools:eyes-selenium-java3:+')
+sourceSets {
+  main {
+    groovy {
+      srcDirs = ['Keywords', 'Include/scripts/groovy']
+      srcDir 'Libs'
+    }
+  }
 }
 
+shadowJar {
+  exclude 'Temp*.class'
+}
+
+katalon {
+  dependencyPrefix = ""
+  minimize = false
+}
+
+jar {
+  from sourceSets.main.allSource
+}
+
+task sourceJar(type: Jar, dependsOn: classes) {
+  classifier = 'sources'
+  from sourceSets.main.groovy
+}
+
+dependencies {
+  compile('com.applitools:eyes-selenium-java3:3.164.0') {
+    exclude group: 'org.seleniumhq.selenium'
+  }
+}

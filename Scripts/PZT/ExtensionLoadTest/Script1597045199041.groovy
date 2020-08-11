@@ -21,5 +21,5 @@ WebUI.navigateToUrl('https://www.google.com')
 
 WebUI.delay(3)
 
-WebUI.closeBrowser()
+not_run: WebUI.closeBrowser()
 
