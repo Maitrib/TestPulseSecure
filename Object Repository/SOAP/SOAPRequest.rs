@@ -34,6 +34,13 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+
+
+
+
+
+</verificationScript>
    <wsdlAddress>http://www.dneonline.com/calculator.asmx?WSDL</wsdlAddress>
 </WebServiceRequestEntity>

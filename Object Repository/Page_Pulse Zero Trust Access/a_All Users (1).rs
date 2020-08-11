@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_All Users</name>
+   <name>a_All Users (1)</name>
    <tag></tag>
-   <elementGuidId>fda072cc-b399-4456-a907-7afa400fece1</elementGuidId>
+   <elementGuidId>c62952e1-2560-481b-8c2c-6c50c515171b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[1]/div/div[2]/div[2]/section/div[1]/ul/li[1]/ul/li[3]/span/a</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>(//li[@id='zero-secure-access-gateways-accordion-menu-item-logs']/span/a)[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

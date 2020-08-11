@@ -1,0 +1,159 @@
+{
+"_index": "analytics-user-aggregated-10-08-2020",
+"_type": "_doc",
+"_id": "78ea79eb0107238d714d6701f69164fe8114e8536bae3b65e4ceb60f724bef8f",
+"_version": 1,
+"_score": null,
+"_source": {
+"unique_id": "78ea79eb0107238d714d6701f69164fe8114e8536bae3b65e4ceb60f724bef8f",
+"doc_info_level": "L2",
+"doc_dimension_type": "users",
+"doc_type": "Snapshot",
+"unique_grouping_key": "",
+"doc_generation_time_type": "hourly",
+"doc_generation_job": "",
+"chart_type": "TopBusyUsers",
+"message_type": "",
+"sub_message_type": "",
+"count": 0,
+"values_integers": [ ],
+"values_keywords": [ ],
+"start_timestamp": 1597017600,
+"end_timestamp": 1597039199,
+"insertion_timestamp": 1597039321,
+"version": 1,
+"device_id": "",
+"tenant_id": "86ec386ca34342be8dc9ee8d204d7476",
+"gateway_id": "",
+"gateway_name": "",
+"gateway_location_city": "",
+"gateway_location_continent": "",
+"gateway_location_country": "",
+"gateway_location_latitude": 0,
+"gateway_location_longitude": 0,
+"gateway_location_postal_code": "",
+"gateway_location_timezone": "",
+"gateway_network_throughput": 0,
+"user_id": "",
+"user_name": "",
+"user_group": "",
+"user_groups_list": [ ],
+"user_risk_score": 0,
+"users_count": 0,
+"devices_count": 0,
+"applications_count": 0,
+"anomalies_count": 0,
+"non_compliance_count": 0,
+"geo_anomalies_count": 0,
+"business_hours_anomalies_count": 0,
+"user_alerts_count": 0,
+"user_activity_deviations_count": 0,
+"realm_name": "",
+"role_names": "",
+"application_id": "",
+"application_type": "",
+"application_name": "",
+"device_type": "",
+"device_location_city": "",
+"device_location_continent": "",
+"device_location_country": "",
+"device_location_latitude": 0,
+"device_location_longitude": 0,
+"device_location_postal_code": "",
+"device_location_timezone": "",
+"non_compliance_policy_id": "",
+"non_compliance_policy_name": "",
+"new_applications": 0,
+"existing_applications": 0,
+"total_applications": 0,
+"consolidated_snapshot": {
+"chart_timestamp": 1597039317,
+"title": "Top Busy Users",
+"min_gradient_value": 0,
+"max_gradient_value": 10,
+"max_users_list": [
+"maitri"
+,
+"ios"
+],
+"max_apps_list": [
+"amazon"
+,
+"zulip"
+,
+"slack"
+,
+"zoom"
+],
+"blocks": [
+{
+"x": "maitri",
+"y": "amazon",
+"value": 3,
+"activity_type": 1,
+"gradient": 10
+}
+,
+{
+"x": "ios",
+"y": "amazon",
+"value": 0,
+"activity_type": 0,
+"gradient": 0
+}
+,
+{
+"x": "maitri",
+"y": "slack",
+"value": 1,
+"activity_type": 1,
+"gradient": 3.333333333333333
+}
+,
+{
+"x": "ios",
+"y": "slack",
+"value": 0,
+"activity_type": 0,
+"gradient": 0
+}
+,
+{
+"x": "ios",
+"y": "zulip",
+"value": 2,
+"activity_type": 2,
+"gradient": 6.666666666666666
+}
+,
+{
+"x": "maitri",
+"y": "zulip",
+"value": 0,
+"activity_type": 0,
+"gradient": 0
+}
+,
+{
+"x": "ios",
+"y": "zoom",
+"value": 1,
+"activity_type": 2,
+"gradient": 3.333333333333333
+}
+,
+{
+"x": "maitri",
+"y": "zoom",
+"value": 0,
+"activity_type": 0,
+"gradient": 0
+}
+]
+},
+"additional_details": { }
+},
+"sort": [
+1597039321000
+]
+}

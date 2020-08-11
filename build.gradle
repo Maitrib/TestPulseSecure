@@ -7,7 +7,7 @@ repositories {
   mavenCentral()
 }
 
-dependencies {
+//dependencies {
   // sample dependencies
   // rest-assured
   // compile 'io.rest-assured:rest-assured:3.2.0'
@@ -17,4 +17,9 @@ dependencies {
   // compile 'io.rest-assured:json-path:3.2.0'
   // JSON Schema Validation
   // compile 'io.rest-assured:json-schema-validator:3.2.0'
+//}
+
+dependencies {
+  compile ('com.applitools:eyes-selenium-java3:+')
 }
+

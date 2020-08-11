@@ -6,17 +6,18 @@
    <elementGuidId>459ac17d-fa48-4553-bea0-635d107ef69e</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value>id(&quot;topBusyHoursChart&quot;)/div[2]/svg[1]/g[@class=&quot;amcharts-Sprite-group amcharts-Container-group&quot;]/g[@class=&quot;amcharts-Sprite-group amcharts-Rectangle-group&quot;]/rect[@class=&quot;amcharts-Rectangle&quot;][count(. | //rect[@class = 'amcharts-Rectangle' and @width = '350' and @height = '215']) = count(//rect[@class = 'amcharts-Rectangle' and @width = '350' and @height = '215'])]</value>
       </entry>
       <entry>
          <key>IMAGE</key>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
-         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

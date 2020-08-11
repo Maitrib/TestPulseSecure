@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_All Users</name>
+   <name>Non_compliance_tooltip1</name>
    <tag></tag>
-   <elementGuidId>fda072cc-b399-4456-a907-7afa400fece1</elementGuidId>
+   <elementGuidId>67bf2af6-5090-49dd-9535-f2858a85f976</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/div[1]/div/div[2]/div[2]/section/div[1]/ul/li[1]/ul/li[3]/span/a</value>
+         <value>(//li[@id='zero-secure-access-gateways-accordion-menu-item-logs']/span/a)[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
+         <value>#dashboard-l1-non-compliance-gridcell > div > div > div > div:nth-child(2) > svg > g > g.amcharts-Container > g:nth-child(2) > g > g:nth-child(5) > g.amcharts-Container.amcharts-Tooltip > g > g > text > tspan
+#dashboard-l1-non-compliance-gridcell > div > div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
