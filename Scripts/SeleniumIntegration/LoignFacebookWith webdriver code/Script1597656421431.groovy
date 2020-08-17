@@ -15,11 +15,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+'Go to facebook login page'
+WebUI.openBrowser('https://www.facebook.com/')
 
-WebUI.navigateToUrl('https://www.google.com')
+CustomKeywords.'com.demo.pack.Facebooklogin.refreshBrowser'()
 
-WebUI.delay(5)
-
-not_run: WebUI.closeBrowser()
+'Login in facebook with selenium webdriver code using custom keyword'
+CustomKeywords.'com.demo.pack.Facebooklogin.login'()
 

@@ -27,31 +27,29 @@ WebUI.openBrowser('https://analytics.elm.pzt.dev.perfsec.com/login/admin')
 
 
 //initialize eyesßß
-Eyes eyes = CustomKeywords.'com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen'('uniqueString0', null)
+Eyes eyes = CustomKeywords.'com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen'('checkpoint', null)
 
 WebDriver driver = Utils.getDriverForEyes()
-
-//driver.findElement(By.xpath("/html/body/div/div/div/div/div[1]/form/div/table[2]/tbody/tr[2]/td/input")).sendKeys('admindb')
-//
-//By locatorBy = By.xpath("/html/body/div/div/div/div/div[1]/form/div/table[2]/tbody/tr[2]/td/input")
-//
-//eyes.checkRegion(locatorBy, 'check checkRegion by selector keyword')
-
-//driver.findElement(By.id('name')).sendKeys('My Name')
-//
-//By locatorBy = By.id('name')
-//
-//eyes.checkRegion(locatorBy, 'check checkRegion by selector keyword')
-//
-//driver.findElement(By.tagName('button')).click()
-//
-//WebElement element = driver.findElement(By.xpath('//img[contains(@class,\'diff2\')]'))
-//
-////check region by web element
-//eyes.checkRegion(element, 'check checkRegion by web element keyword')
-//check window not including eyes set up
+eyes.checkWindow('check checkWindow')
+driver.findElement(By.xpath("/html/body/div/div/div/div/div[1]/form/div/table[2]/tbody/tr[2]/td/input")).sendKeys('admindb')
 eyes.checkWindow('check checkWindow')
 
+By locatorBy = By.xpath("/html/body/div/div/div/div/div[1]/form/div/table[2]/tbody/tr[2]/td/input")
+
+eyes.checkRegion(locatorBy, 'check checkRegion by selector keyword')
+
+//
+driver.findElement(By.xpath("/html/body/div/div/div/div/div[1]/form/div/table[2]/tbody/tr[3]/td/input")).sendKeys('dana123')
+eyes.checkWindow('check checkWindow')
+
+By locatorBy1 = By.xpath("/html/body/div/div/div/div/div[1]/form/div/table[2]/tbody/tr[3]/td/input")
+eyes.checkRegion(locatorBy1, 'check checkRegion by selector keyword')
+
+//WebElement element = driver.findElement(By.xpath('//img[contains(@class,\'diff2\')]'))
+
+
+eyes.checkWindow('checkWindow')
+//eyes.close()
 CustomKeywords.'com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose'(eyes)
 
 WebUI.closeBrowser()

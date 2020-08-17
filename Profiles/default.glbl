@@ -34,4 +34,9 @@
       <initValue>'US'</initValue>
       <name>countryCode</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://elastic:mr69pcc8nn2tpgvnsnztdcf5@localhost:9200/'</initValue>
+      <name>ElasticURL</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

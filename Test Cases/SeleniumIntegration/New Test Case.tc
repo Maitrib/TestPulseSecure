@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This for checking the facebook login</description>
+   <name>New Test Case</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5f9d04d2-df63-467a-8ab8-5da5a69a7f40</testCaseGuid>
+</TestCaseEntity>
