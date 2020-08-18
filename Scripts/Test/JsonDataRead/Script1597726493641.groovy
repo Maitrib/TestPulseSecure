@@ -21,9 +21,8 @@ com.kms.katalon.core.util.internal.JsonUtil
 
 def slurper = new JsonSlurper()
 
-println(System.getProperty('user.dir'))
 
-File jsontxt = new File(System.getProperty('user.dir') + '/data.json')
+File jsontxt = new File('/Users/maitri.brahmakshatriya/Katalon Studio/TestPulseSecure/data.json')
 
 //def InputJson = new JsonSlurper().parse(jsontxt,'utf-8')
 def result = slurper.parse(jsontxt)
@@ -43,10 +42,7 @@ print(id)
 
 println(result)
 
-WebUI.openBrowser(type)
-
 //assert Mobile.getElementText(findTestObject(‘your/object’)) == yourValue
+WebUI.verifyMatch(type, GlobalVariable.type, true)
 
-WebUI.verifyMatch(type, GlobalVariable.type , true)
-	
-	
+
