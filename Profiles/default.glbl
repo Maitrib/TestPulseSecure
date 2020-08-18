@@ -39,4 +39,9 @@
       <initValue>'http://elastic:mr69pcc8nn2tpgvnsnztdcf5@localhost:9200/'</initValue>
       <name>ElasticURL</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'TopBusyUsers'</initValue>
+      <name>type</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
