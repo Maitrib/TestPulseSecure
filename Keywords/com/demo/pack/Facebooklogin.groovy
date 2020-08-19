@@ -18,6 +18,7 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
 
+
 import internal.GlobalVariable
 
 import MobileBuiltInKeywords as Mobile
@@ -76,5 +77,67 @@ class Facebooklogin {
 
 		driver.findElement(By.xpath("//button[@id='u_0_b']")).click();
 
+	}
+
+	@Keyword
+	def static run(String cmd, File cwd = null){
+
+		// update environment with the path to the local binaries
+		def env = System.getenv()
+		def envArray = []
+
+		for (String key : env.keySet()) {
+			if(key != "PATH"){
+				envArray.add(key + "=" + env.get(key));
+			}
+			else{
+				/*
+				 * forcing Katalon to use all binaries on Macs as default path is
+				 * PATH:/usr/bin:/bin:/usr/sbin:/sbin irrespective of system PATH variable
+				 */
+				envArray.add(key + "=" + env.get(key) + ":/usr/local/bin");
+			}
+		}
+
+
+		// executing with the new environment and null for directory to use $pwd
+		def sout = new StringBuilder()
+		def serr = new StringBuilder()
+		// ensure it uses the bash console
+		KeywordUtil.logInfo("Running shell command: $cmd")
+
+		// allows running on both jenkins agent and locally
+		def proc =  ["bash", "-c", cmd].execute((String[])envArray, cwd);
+
+		proc.consumeProcessOutput(sout, serr)
+		proc.waitFor();
+		KeywordUtil.logInfo("[STDERR]: " + serr.toString())
+		KeywordUtil.logInfo("[STDOUT]: " + sout.toString())
+
+		// exit if there was an execution error
+		assert !proc.exitValue(), "[ERROR] " + serr.toString();
+		return [
+			sout.toString(),
+			serr.toString()
+		]
+	}
+
+
+
+	//	@Keyword
+	//	def importPython(){
+	//
+	//		// empty argument will cause issues for the script
+	//		//	String subdomainArgument = (tenantSubdomain != null) ? "--tenant-subdomain $tenantSubdomain" : "";
+	//		//return run("System.getProperty('user.dir')" + "/gen_and_import_data.py")
+	//		return run("/Users/maitri.brahmakshatriya/Downloads/gen_and_import_data.py")
+	//	}
+
+	@Keyword
+	def static updateEtcHosts(){
+
+		// empty argument will cause issues for the script
+		//String subdomainArgument = (tenantSubdomain != null) ? "--tenant-subdomain $tenantSubdomain" : "";
+		return run("./AppDynamicsJob.py")
 	}
 }
